@@ -4,13 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>QR-Code erstellen</title>
-    <meta name="description" content="Mit dieser App ist es möglich, QR-Codes ganz einfach zu erstellen. Ein QR-Code ist ein zweidimensionaler Barcode, der Informationen speichern kann, wie etwa URLs, Kontaktinformationen oder Texte.">
+    <title>QR-Code WebApp</title>
+    <meta name="theme-color" content="#5c666f">
+    <meta name="license" content="AGPL 3.0 only (see LICENSE File in root directory)">
+    <meta name="author" content="Sascha Schneider <sc@niederrhein.studio>">
+    <meta name="copyright" content="© 2015-2025 Niederrhein Studio <niederrhein.studio>">
+    <meta property="og:title" content="QR-Code WebApp">
+    <meta name="description" content="Mit dieser App ist es möglich, QR-Codes ganz einfach im Webbrowser zu erstellen. Ein QR-Code ist ein zweidimensionaler Barcode, der Informationen speichern kann, wie etwa URLs, Kontaktinformationen oder Texte.">
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "WebSite",
-            "name": "QR-Code erstellen",
+            "name": "QR-Code WebApp",
             "url": "https://qr.niederrhein.app"
         }
     </script>
@@ -95,34 +100,29 @@
             });
         })();
     </script>
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/manifest/icon-qr-light.png?h=8c687e6954e1536529a58bf89a9a9b98">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/manifest/icon-qr-dark.png?h=8c687e6954e1536529a58bf89a9a9b98" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/manifest/icon-qr-light.png?h=8c687e6954e1536529a58bf89a9a9b98">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/manifest/icon-qr-dark.png?h=8c687e6954e1536529a58bf89a9a9b98" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/svg+xml" sizes="16x16" href="assets/img/manifest/qr-code.svg?h=50119562cd882b4948d2df689ce534b5">
-    <link rel="icon" type="image/svg+xml" sizes="16x16" href="assets/img/manifest/qr-code.svg?h=50119562cd882b4948d2df689ce534b5">
-    <link rel="icon" type="image/svg+xml" sizes="16x16" href="assets/img/manifest/qr-code.svg?h=50119562cd882b4948d2df689ce534b5">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/manifest/icon-180.png?h=eaf13e31875c2a4cb269095256209861">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/manifest/icon-16.png?h=eaf13e31875c2a4cb269095256209861">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/manifest/icon-16.png?h=eaf13e31875c2a4cb269095256209861" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/manifest/icon-32.png?h=eaf13e31875c2a4cb269095256209861">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/manifest/icon-32.png?h=eaf13e31875c2a4cb269095256209861" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/manifest/icon-180.png?h=eaf13e31875c2a4cb269095256209861">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/manifest/icon-mac-512.png?h=01de588843deb47acbc2ce0cfe2d09fe">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/manifest/icon-mac-512.png?h=01de588843deb47acbc2ce0cfe2d09fe">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=945fb3ff8106aaf5eda73c29e0d47826">
-    <link rel="manifest" href="manifest.json?h=77c26ece4a095afdb0292de0db126470" crossorigin="use-credentials">
+    <link rel="manifest" href="manifest.json?h=8aa613a32e25a92d74dbc90e8c4e1592" crossorigin="use-credentials">
     <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css?h=befd8a398792e305b7ffd4a176b5b585">
 </head>
 
 <body class="bg-body-tertiary">
     <header>
         <!-- Start: Navbar With Button -->
-        <nav class="navbar navbar-expand-md bg-body shadow py-2">
-            <div class="container-fluid"><a class="navbar-brand d-flex align-items-center p-0" href="/index.html"><span class="bs-icon-md text-muted d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-qr-code text-dark-emphasis">
-                            <path d="M2 2h2v2H2z"></path>
-                            <path d="M6 0v6H0V0zM5 1H1v4h4zM4 12H2v2h2z"></path>
-                            <path d="M6 10v6H0v-6zm-5 1v4h4v-4zm11-9h2v2h-2z"></path>
-                            <path d="M10 0v6h6V0zm5 1v4h-4V1zM8 1V0h1v2H8v2H7V1zm0 5V4h1v2zM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8zm0 0v1H2V8H1v1H0V7h3v1zm10 1h-1V7h1zm-1 0h-1v2h2v-1h-1zm-4 0h2v1h-1v1h-1zm2 3v-1h-1v1h-1v1H9v1h3v-2zm0 0h3v1h-2v1h-1zm-4-1v1h1v-2H7v1z"></path>
-                            <path d="M7 12h1v3h4v1H7zm9 2v2h-3v-1h2v-1z"></path>
-                        </svg></span>
-                    <h1 class="m-0 h5">QR-Code erstellen</h1>
+        <nav class="navbar navbar-expand-md shadow py-1" style="background: #5c666f;" data-bs-theme="light">
+            <div class="container-fluid"><a class="navbar-brand d-flex align-items-center p-0" href="/index.html"><span class="bs-icon-md text-muted d-flex justify-content-center align-items-center p-1 me-2 bs-icon"><img class="img-fluid rounded-3" width="512" height="512" src="assets/img/manifest/icon-mac-512.png?h=01de588843deb47acbc2ce0cfe2d09fe" alt="QR-Code Icon"></span>
+                    <h1 class="text-light m-0 h5">QR-Code WebApp</h1>
                 </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav me-auto"></ul>
-                    <div class="theme-switcher dropdown me-1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" title="Umschalten zwischen Light Mode / Dark Mode"><a aria-expanded="false" data-bs-toggle="dropdown" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill fs-3" alt="Umschalten zwischen Light- und Darkmode">
+                    <div class="theme-switcher dropdown me-1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" title="Umschalten zwischen Light Mode / Dark Mode"><a aria-expanded="false" data-bs-toggle="dropdown" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill fs-3 text-light" alt="Umschalten zwischen Light- und Darkmode">
                                 <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
                             </svg></a>
                         <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="light"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill opacity-50 me-2">
@@ -133,7 +133,7 @@
                                 </svg>Dark</a><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="auto"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-half opacity-50 me-2">
                                     <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"></path>
                                 </svg>Auto</a></div>
-                    </div><button class="btn d-flex align-items-center" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle-fill fs-3 text-primary me-2" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" id="button-about" title="Über diese App...">
+                    </div><button class="btn d-flex align-items-center" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle-fill fs-3 text-light me-2" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" id="button-about" title="Über diese App...">
                             <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
                         </svg></button>
                 </div>
@@ -182,7 +182,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title h4">Über „QR-Code erstellen“...</h2><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    <h2 class="modal-title h4">Über „QR-Code WebApp“...</h2><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
                     <p class="text-center">Version: 25.11.9</p>

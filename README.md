@@ -1,8 +1,8 @@
-# QR-Code-WebApp
+# QR-Code WebApp
 
-## QR-Code-WebApp
+## QR-Code WebApp
 
-@copyright: © 2017-2025 Niederrhein Studio <niederrhein.studio>  
+@copyright: © 2015-2025 Niederrhein Studio <niederrhein.studio>  
 @author: Sascha Schneider <sc@niederrhein.studio>  
 @license: AGPL 3.0 only
 
