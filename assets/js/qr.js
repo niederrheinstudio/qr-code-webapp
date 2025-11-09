@@ -1,7 +1,7 @@
 /**
  * Erstellt QR-Codes.
  * @version 25.11.9
- * @copyright 2022-2025 Niederrhein Studio <niederrhein.studio>
+ * @copyright 2015-2025 Niederrhein Studio <niederrhein.studio>
  * @author Sascha Schneider <sc@niederrhein.studio>
  * @license AGPL 3.0 (siehe LICENSE für Details)
  * @requires qrcode.js (https://davidshimjs.github.io/qrcodejs/)
@@ -68,6 +68,12 @@ function generateQRCode () {
       colorLight: "#ffffff",
       correctLevel: quality
     })
+
+    // Von der QRCode.js-Bibliothek wird standardmäßig ein title-Attribut
+    // gesetzt, welches den QR-Code beschreibt. Da dieses leer ist, wenn kein
+    // Text eingegeben wurde, entfernen wir es hier, um Barrierefreiheits-
+    // Tests zu bestehen.
+    document.getElementById('qrcode').removeAttribute('title') 
 }
 
 /**

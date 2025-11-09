@@ -117,10 +117,12 @@
                             <path d="M6 10v6H0v-6zm-5 1v4h4v-4zm11-9h2v2h-2z"></path>
                             <path d="M10 0v6h6V0zm5 1v4h-4V1zM8 1V0h1v2H8v2H7V1zm0 5V4h1v2zM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8zm0 0v1H2V8H1v1H0V7h3v1zm10 1h-1V7h1zm-1 0h-1v2h2v-1h-1zm-4 0h2v1h-1v1h-1zm2 3v-1h-1v1h-1v1H9v1h3v-2zm0 0h3v1h-2v1h-1zm-4-1v1h1v-2H7v1z"></path>
                             <path d="M7 12h1v3h4v1H7zm9 2v2h-3v-1h2v-1z"></path>
-                        </svg></span><span>QR-Code erstellen</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        </svg></span>
+                    <h1 class="m-0 h5">QR-Code erstellen</h1>
+                </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav me-auto"></ul>
-                    <div class="theme-switcher dropdown me-1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" title="Umschalten zwischen Light Mode / Dark Mode"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill fs-3">
+                    <div class="theme-switcher dropdown me-1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" title="Umschalten zwischen Light Mode / Dark Mode"><a aria-expanded="false" data-bs-toggle="dropdown" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill fs-3" alt="Umschalten zwischen Light- und Darkmode">
                                 <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
                             </svg></a>
                         <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="light"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill opacity-50 me-2">
@@ -150,13 +152,13 @@
                                 </div>
                             </div>
                             <div class="col-md-12 d-flex justify-content-center">
-                                <div class="bg-white p-3" id="qrcode" style="height:160px;width:160px;" title=" "><canvas width="128" height="128" style="display:none;"></canvas><img alt="Scan me!" style="display:block;"></div>
+                                <div class="bg-white p-3" id="qrcode" style="height:160px;width:160px;"><canvas width="128" height="128" style="display:none;"></canvas><img alt="Scan me!" style="display:block;"></div>
                             </div>
                             <div class="col-md-12 d-flex justify-content-center">
                                 <div class="pt-2 pb-4"><button class="btn btn-primary d-flex align-items-center" id="qrdownload" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewbox="0 0 16 16" class="bi bi-download"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path></svg>&nbsp;QR-Code als PNG downloaden</button></div>
                             </div>
-                            <div class="col-md-12 py-2"><label class="d-flex align-items-center form-label">Text oder Link&nbsp;</label><textarea class="w-100 form-control" id="qrtext" rows="5"></textarea></div>
-                            <div class="col-md-12 col-lg-6 py-2"><label class="d-flex align-items-center form-label">Fehlerkorrekturlevel&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle-fill text-info" data-bs-toggle="tooltip" data-bss-tooltip="" title="Bei QR-Codes gibt es verschiedene Fehlerkorrekturlevels, die die Fähigkeit des Codes bestimmen, beschädigte oder unleserliche Teile zu reparieren. Die Levels reichen von Low (7% Fehlerkorrektur) bis High (30% Fehlerkorrektur), was bedeutet, dass QR-Codes mit höherem Fehlerkorrekturlevel mehr Datenverlust tolerieren können, jedoch weniger Speicherplatz für die eigentlichen Informationen bieten.">
+                            <div class="col-md-12 py-2"><label class="d-flex align-items-center form-label" for="qrtext">Text oder Link&nbsp;</label><textarea class="w-100 form-control" id="qrtext" rows="5"></textarea></div>
+                            <div class="col-md-12 col-lg-6 py-2"><label class="d-flex align-items-center form-label" for="qrlevel">Fehlerkorrekturlevel&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle-fill text-info" data-bs-toggle="tooltip" data-bss-tooltip="" title="Bei QR-Codes gibt es verschiedene Fehlerkorrekturlevels, die die Fähigkeit des Codes bestimmen, beschädigte oder unleserliche Teile zu reparieren. Die Levels reichen von Low (7% Fehlerkorrektur) bis High (30% Fehlerkorrektur), was bedeutet, dass QR-Codes mit höherem Fehlerkorrekturlevel mehr Datenverlust tolerieren können, jedoch weniger Speicherplatz für die eigentlichen Informationen bieten.">
                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
                                     </svg>&nbsp;</label><select class="form-select" id="qrlevel">
                                     <option value="L" selected="">Low (7%)</option>
@@ -164,8 +166,8 @@
                                     <option value="Q">Quartile (25%)</option>
                                     <option value="H">High (30%)</option>
                                 </select></div>
-                            <div class="col-md-12 col-lg-6 py-2"><label class="d-flex align-items-center form-label">Abmessung&nbsp;</label><select class="form-select" id="qrsize">
-                                    <option value="64" selected="">64px · 64px</option>
+                            <div class="col-md-12 col-lg-6 py-2"><label class="d-flex align-items-center form-label" for="qrsize">Abmessung&nbsp;</label><select class="form-select" id="qrsize">
+                                    <option value="64">64px · 64px</option>
                                     <option value="128" selected="">128px · 128px</option>
                                     <option value="256">256px · 256px</option>
                                     <option value="512">512px · 512px</option>
@@ -180,11 +182,12 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Über „QR-Code erstellen“...</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    <h2 class="modal-title h4">Über „QR-Code erstellen“...</h2><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="text-center">Version: 25.10.31</p>
-                    <p class="text-decoration-none text-center">© 2017&nbsp;<a href="https://niederrhein.studio" target="_blank" rel="author">Niederrhein Studio</a></p>
+                    <p class="text-center">Version: 25.11.9</p>
+                    <p class="text-decoration-none text-center">© 2015-2025&nbsp;<a href="https://niederrhein.studio" target="_blank" rel="author">Niederrhein Studio</a></p>
+                    <p class="text-center">Git: <a href="https://github.com/niederrheinstudio/qr-code-webapp" target="_blank">https://github.com/niederrheinstudio/qr-code-webapp</a></p>
                 </div>
             </div>
         </div>
@@ -193,7 +196,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js?h=2cf0875e1daf356bc4e64c053e7a4150"></script>
     <script src="assets/js/bs-init.js?h=f85385df9bc7fca4241bc1dbf53b9d61"></script>
     <script src="assets/js/lib/qrcode.js?h=a08e27268841f6e346fc806829845f65"></script>
-    <script src="assets/js/qr.js?h=d3d62efbaa95315163e77a3e22985a65"></script>
+    <script src="assets/js/qr.js?h=54417a50109d774e0ac654c38a624e71"></script>
 </body>
 
 </html>
