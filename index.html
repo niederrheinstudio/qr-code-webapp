@@ -113,7 +113,7 @@
     <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css?h=befd8a398792e305b7ffd4a176b5b585">
 </head>
 
-<body class="bg-body-tertiary">
+<body>
     <header>
         <!-- Start: Navbar With Button -->
         <nav class="navbar navbar-expand shadow py-1" style="background: #5c666f;" data-bs-theme="light">
@@ -147,7 +147,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="alert alert-info mb-4" role="alert">
+                                <div class="alert alert-light mb-4" role="alert">
                                     <p class="mb-0"><span style="background-color:transparent;">Mit dieser App ist es möglich, QR-Codes ganz einfach zu erstellen. Ein QR-Code ist ein zweidimensionaler Barcode, der Informationen speichern kann, wie etwa URLs, Kontaktinformationen oder Texte. Der erstellte QR-Code kann dann mit einem geeigneten Gerät gescannt werden, um schnell auf die gespeicherten Informationen zuzugreifen und diese weiterzugeben.</span></p>
                                 </div>
                             </div>
@@ -157,21 +157,24 @@
                             <div class="col-md-12 d-flex justify-content-center">
                                 <div class="pt-2 pb-4"><button class="btn btn-primary d-flex align-items-center" id="qrdownload" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewbox="0 0 16 16" class="bi bi-download"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path></svg>&nbsp;QR-Code als PNG downloaden</button></div>
                             </div>
-                            <div class="col-md-12 py-2"><label class="d-flex align-items-center form-label" for="qrtext">Text oder Link&nbsp;</label><textarea class="w-100 form-control" id="qrtext" rows="5"></textarea></div>
-                            <div class="col-md-12 col-lg-6 py-2"><label class="d-flex align-items-center form-label" for="qrlevel">Fehlerkorrekturlevel&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle-fill text-info" data-bs-toggle="tooltip" data-bss-tooltip="" title="Bei QR-Codes gibt es verschiedene Fehlerkorrekturlevels, die die Fähigkeit des Codes bestimmen, beschädigte oder unleserliche Teile zu reparieren. Die Levels reichen von Low (7% Fehlerkorrektur) bis High (30% Fehlerkorrektur), was bedeutet, dass QR-Codes mit höherem Fehlerkorrekturlevel mehr Datenverlust tolerieren können, jedoch weniger Speicherplatz für die eigentlichen Informationen bieten.">
-                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
-                                    </svg>&nbsp;</label><select class="form-select" id="qrlevel">
+                            <div class="col-md-12 py-2"><label class="fw-semibold d-flex align-items-center mt-3 form-label" for="qrtext">Text oder Link&nbsp;</label><textarea class="w-100 form-control" id="qrtext" rows="5"></textarea></div>
+                            <div class="col-md-12 col-lg-6 py-2"><label class="fw-semibold d-flex align-items-center mt-3 mb-0 form-label" for="qrlevel">Fehlerkorrekturlevel&nbsp;&nbsp;</label>
+                                <p class="py-0 small" id="link-info-errorlevel"><a href="#modal-about">Welcher Fehlerkorrekturlevel ist der Richtige?</a></p><select class="form-select" id="qrlevel">
                                     <option value="L" selected="">Low (7%)</option>
                                     <option value="M" selected="">Medium (15%)</option>
                                     <option value="Q">Quartile (25%)</option>
                                     <option value="H">High (30%)</option>
-                                </select></div>
-                            <div class="col-md-12 col-lg-6 py-2"><label class="d-flex align-items-center form-label" for="qrsize">Abmessung&nbsp;</label><select class="form-select" id="qrsize">
+                                </select>
+                            </div>
+                            <div class="col-md-12 col-lg-6 py-2"><label class="fw-semibold d-flex align-items-center mt-3 mb-0 form-label" for="qrsize">Abmessung&nbsp;</label>
+                                <p class="py-0 small" id="link-info-size"><a href="#modal-about">Welche Abmessung soll ich wählen?</a></p><select class="form-select" id="qrsize">
                                     <option value="64">64px · 64px</option>
-                                    <option value="128" selected="">128px · 128px</option>
-                                    <option value="256">256px · 256px</option>
+                                    <option value="150" selected="">150px · 150px</option>
+                                    <option value="300">300px · 300px</option>
                                     <option value="512">512px · 512px</option>
-                                </select></div>
+                                    <option value="800">800px · 800px</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -185,9 +188,39 @@
                     <h2 class="modal-title h4">Über „QR-Code WebApp“...</h2><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="text-center">Version: 25.11.9</p>
+                    <p class="text-center">Version: 25.11.13</p>
                     <p class="text-decoration-none text-center">© 2015-2025&nbsp;<a href="https://niederrhein.studio" target="_blank" rel="author">Niederrhein Studio</a></p>
                     <p class="text-center">Git: <a href="https://github.com/niederrheinstudio/qr-code-webapp" target="_blank">https://github.com/niederrheinstudio/qr-code-webapp</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-info-errorlevel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h4">Welcher Fehlerkorrekturlevel ist der Richtige?</h2><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bei QR-Codes gibt es verschiedene Fehlerkorrekturlevels, die die Fähigkeit des Codes bestimmen, beschädigte oder unleserliche Teile zu reparieren.&nbsp;</p>
+                    <p>Die Levels reichen von Low (7% Fehlerkorrektur) bis High (30% Fehlerkorrektur), was bedeutet, dass QR-Codes mit höherem Fehlerkorrekturlevel mehr Datenverlust tolerieren können, jedoch weniger Speicherplatz für die eigentlichen Informationen bieten.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-info-size">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h4">Welcher Abmessung soll ich wählen?</h2><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ein QR-Code sollte je nach Verwendungszweck unterschiedliche Abmessungen haben.&nbsp;</p>
+                    <ul>
+                        <li class="mb-3">Für digitale Anwendungen, wie Webseiten oder Bildschirme, kann eine Größe von 150x150 Pixel ausreichen.</li>
+                        <li class="mb-3">Für Drucksachen, wie Visitenkarten oder Flyer, empfiehlt sich eine Größe von mindestens 3x3 cm (ca. 300x300 Pixel) für eine gute Scannbarkeit.</li>
+                        <li>Für großflächige Anwendungen, wie Plakate, sollten QR-Codes mindestens 8x8 cm (ca. 800x800 Pixel) messen, um sicherzustellen, dass sie auch aus größerer Entfernung gescannt werden können.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -196,7 +229,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js?h=2cf0875e1daf356bc4e64c053e7a4150"></script>
     <script src="assets/js/bs-init.js?h=f85385df9bc7fca4241bc1dbf53b9d61"></script>
     <script src="assets/js/lib/qrcode.js?h=a08e27268841f6e346fc806829845f65"></script>
-    <script src="assets/js/qr.js?h=54417a50109d774e0ac654c38a624e71"></script>
+    <script src="assets/js/qr.js?h=19cf36fde45cde3bda851b6de3a0b44e"></script>
 </body>
 
 </html>

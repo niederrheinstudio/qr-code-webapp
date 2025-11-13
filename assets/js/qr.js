@@ -142,6 +142,17 @@ const _buttonabout = document.querySelector('#button-about')
 if (_buttonabout) _buttonabout.addEventListener('click', function () {
   $('#modal-about').modal('show')
 })
+const _buttoninfoerrorlevel = document.querySelector('#link-info-errorlevel')
+if (_buttoninfoerrorlevel) _buttoninfoerrorlevel.addEventListener(
+  'click', 
+  function () {
+    $('#modal-info-errorlevel').modal('show')
+  }
+)
+const _buttoninfosize = document.querySelector('#link-info-size')
+if (_buttoninfosize) _buttoninfosize.addEventListener('click', function () {
+  $('#modal-info-size').modal('show')
+})
 
 /**
  * Initiale Generierung des QR-Codes beim Laden der Seite.
