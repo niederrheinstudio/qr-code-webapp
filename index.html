@@ -116,7 +116,7 @@
 <body>
     <header>
         <!-- Start: Navbar With Button -->
-        <nav class="navbar navbar-expand shadow py-1" style="background: #5c666f;" data-bs-theme="light">
+        <nav class="navbar navbar-expand py-1" style="background: #5c666f;" data-bs-theme="light">
             <div class="container-fluid"><a class="navbar-brand d-flex align-items-center p-0" href="/index.html"><span class="bs-icon-md text-muted d-flex justify-content-center align-items-center p-1 me-2 bs-icon"><img class="img-fluid rounded-3" width="512" height="512" src="assets/img/manifest/icon-mac-512.png?h=01de588843deb47acbc2ce0cfe2d09fe" alt="QR-Code Icon"></span>
                     <h1 class="text-light m-0 h5">QR-Code Generator</h1>
                 </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -159,7 +159,7 @@
                             </div>
                             <div class="col-md-12 py-2"><label class="fw-semibold d-flex align-items-center mt-3 form-label" for="qrtext">Text oder Link&nbsp;</label><textarea class="w-100 form-control" id="qrtext" rows="5"></textarea></div>
                             <div class="col-md-12 col-lg-6 py-2"><label class="fw-semibold d-flex align-items-center mt-3 mb-0 form-label" for="qrlevel">Fehlerkorrekturlevel&nbsp;&nbsp;</label>
-                                <p class="py-0 small" id="link-info-errorlevel"><a href="#">Welcher Fehlerkorrekturlevel ist der Richtige?</a></p><select class="form-select" id="qrlevel">
+                                <p class="py-0 small"><a id="link-info-errorlevel" href="#" rel="help"><span style="color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));">Welcher Fehlerkorrekturlevel ist der Richtige?</span></a></p><select class="form-select" id="qrlevel">
                                     <option value="L" selected="">Low (7%)</option>
                                     <option value="M" selected="">Medium (15%)</option>
                                     <option value="Q">Quartile (25%)</option>
@@ -167,7 +167,7 @@
                                 </select>
                             </div>
                             <div class="col-md-12 col-lg-6 py-2"><label class="fw-semibold d-flex align-items-center mt-3 mb-0 form-label" for="qrsize">Abmessung&nbsp;</label>
-                                <p class="py-0 small" id="link-info-size"><a href="#">Welche Abmessung wird zu welchem Verwendungszweck benötigt?</a></p><select class="form-select" id="qrsize">
+                                <p class="py-0 small"><a id="link-info-size" href="#" rel="help"><span style="color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));">Welche Abmessung wird zu welchem Verwendungszweck benötigt?</span></a></p><select class="form-select" id="qrsize">
                                     <option value="64">64 × 64 Pixel</option>
                                     <option value="150" selected="">150 × 150 Pixel</option>
                                     <option value="300">300 × 300 Pixel</option>
